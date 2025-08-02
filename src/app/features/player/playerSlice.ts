@@ -2,10 +2,10 @@
 
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface Track {
+export interface Track {
   id: string;
   title: string;
-  url: string;
+  src: string;
 }
 
 interface PlayerState {

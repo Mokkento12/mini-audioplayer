@@ -6,9 +6,13 @@ import type { Track } from "@/app/features/player/playerSlice";
 import type { RootState } from "@/app/store/store";
 
 const tracks: Track[] = [
-  { id: "1", title: "Lofi Beats", src: "/lofi-beats.mp3" },
-  { id: "2", title: "Chill Vibes", src: "/chill-vibes.mp3" },
-  { id: "3", title: "Focus Flow", src: "/focus-flow.mp3" },
+  {
+    id: "1",
+    title: "eona emotional ambient pop",
+    src: "/eona-emotional-ambient-pop-351436.mp3",
+  },
+  { id: "2", title: "tell me what", src: "/tell-me-what-379638.mp3" },
+  { id: "3", title: "the motion", src: "/the-motion-349853.mp3" },
 ];
 
 const TrackList = () => {
