@@ -1,17 +1,17 @@
-"use client";
+import type { Metadata } from "next";
+import { ReactNode } from "react";
+import Providers from "./providers";
 
-import { Provider } from "react-redux";
-import { store } from "./store/store";
+export const metadata: Metadata = {
+  title: "Next App",
+  description: "Example with Redux and GraphQL",
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <Provider store={store}>{children}</Provider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

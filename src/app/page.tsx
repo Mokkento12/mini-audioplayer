@@ -2,6 +2,7 @@
 
 import TrackList from "@/app/components/TrackList";
 import AudioPlayer from "@/app/components/AudioPlayer";
+import CharacterList from "./components/CharactersList";
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
 
       <TrackList />
       <AudioPlayer />
+      <h1 className="text-2xl font-bold mb-4">👽 Персонажи Rick and Morty</h1>
+      <CharacterList />
     </main>
   );
 }
